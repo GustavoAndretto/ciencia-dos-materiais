@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/layout/css/layout.css">
+    <title>Ciência dos Materiais - Calculador</title>
+</head>
+<body>   
+    <div class="center">
+        <h1 class="text-center">Ciência dos Materiais<br>Calculador</h1>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    <label>N<sub>&nbsp;&nbsp;</sub></label>
+                    <input type="text" id="inputN">
+                </td>
+                <td>
+                    <label>N<sub>v&nbsp;</sub></label>
+                    <input type="text" id="inputNv">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>N<sub>A&nbsp;</sub></label>
+                    <input type="text" id="inputNa">
+                </td>
+                <td>
+                    <label>Q<sub>v&nbsp;</sub></label>
+                    <input type="text" id="inputQv">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>ρ<sub>&nbsp;&nbsp;</sub></label>
+                    <input type="text" id="inputP">
+                </td>
+                <td>
+                    <label>A<sub>At</sub></label>
+                    <input type="text" id="inputA">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>k<sub>B&nbsp;</sub></label>
+                    <input type="text" id="inputK">
+                </td>
+                <td>
+                    <label>T<sub>K&nbsp;</sub></label>
+                    <input type="text" id="inputT">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="flex-column" id="nAtomsDiv">
+            <h3>Cálculo do número total de átomos por unidade de volume (átomo/m<sup>-3</sup></sup>)</h3>
+            <span class="text-center" id="nAtoms">NaN</span>
+        </div>
+        <div class="flex-column" id="nVacancyDiv">
+            <h3>Cálculo do número do número de lacunas por metro cúbico (lacunas/m<sup>-3</sup>)</h3>
+            <span class="text-center" id="nVacancy">NaN</span>
+        </div>
+        <div class="flex-column" id="nSiteDiv">
+            <h3>Cálculo da fração de sítios atômicos que estão vagos (N<sub>v</sub>/N)</h3>
+            <span class="text-center" id="nSite">NaN</span>
+        </div>
+        <div class="flex-column" id="nEnergyDiv">
+            <h3>Cálculo da energia de ativação para a formação de lacunas (ev/K<sup>-1</sup>)</h3>
+            <span class="text-center" id="nEnergy">NaN</span>
+        </div>  
+    </div>
+    <script src="./code/materials-science.js"></script>
+</body>
+</html>
